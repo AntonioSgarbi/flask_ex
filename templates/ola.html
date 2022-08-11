@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+</head>
+<body>
+Olá {{ name }}, vamos usar arquivos HTML com Jinja2
+    <table border="1">
+        {% for prod in products %}
+        <tr>
+            <td>{{ prod.nome }}</td>
+            <td>{{ prod.preco }}</td>
+        </tr>
+        {% endfor %}
+    </table>
+</body>
+</html>
